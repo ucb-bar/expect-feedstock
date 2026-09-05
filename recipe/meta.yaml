@@ -59,6 +59,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
+    - gnuconfig
     - autoconf
     - automake
     - make
