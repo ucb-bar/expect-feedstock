@@ -1,6 +1,9 @@
-# This file was generated automatically from conda-smithy. To update this configuration,
-# update the conda-forge.yml and/or the recipe/meta.yaml.
-# -*- mode: yaml -*-
-
+# Builds now run on GitHub Actions (.github/workflows/conda-build.yml).
+# Keep a no-op Azure pipeline so an existing Azure definition does not fail.
 jobs:
-  - template: ./.azure-pipelines/azure-pipelines-linux.yml
+  - job: skip
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+      - script: echo "Skipping Azure Pipelines; builds run on GitHub Actions."
+        displayName: Skip Azure

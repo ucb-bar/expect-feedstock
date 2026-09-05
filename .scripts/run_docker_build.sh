@@ -63,12 +63,14 @@ if [ -z "${CI}" ]; then
 fi
 
 export UPLOAD_PACKAGES="${UPLOAD_PACKAGES:-True}"
+export IS_PR_BUILD="${IS_PR_BUILD:-False}"
 docker run ${DOCKER_RUN_ARGS} \
            -v "${RECIPE_ROOT}":/home/conda/recipe_root:rw,z \
            -v "${FEEDSTOCK_ROOT}":/home/conda/feedstock_root:rw,z \
            -e CONFIG \
            -e HOST_USER_ID \
            -e UPLOAD_PACKAGES \
+           -e IS_PR_BUILD \
            -e GIT_BRANCH \
            -e UPLOAD_ON_BRANCH \
            -e CI \

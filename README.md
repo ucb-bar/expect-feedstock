@@ -22,30 +22,21 @@ Current build status
 
 
 <table>
-    
   <tr>
-    <td>Azure</td>
+    <td>GitHub Actions</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10904&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/expect-feedstock?branchName=master">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10904&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/expect-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <a href="https://github.com/jimfangx/expect-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/jimfangx/expect-feedstock/actions/workflows/conda-build.yml/badge.svg" alt="Build conda package">
+      </a>
     </td>
+  </tr>
+  <tr>
+    <td>linux_64</td>
+    <td>ubuntu-latest</td>
+  </tr>
+  <tr>
+    <td>linux_aarch64</td>
+    <td>ubuntu-24.04-arm</td>
   </tr>
 </table>
 
