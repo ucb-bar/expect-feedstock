@@ -14,12 +14,15 @@ export CONFIG_FILE="${CI_SUPPORT}/${CONFIG}.yaml"
 
 cat >~/.condarc <<CONDARC
 
+channels:
+  - conda-forge
 conda-build:
- root-dir: ${FEEDSTOCK_ROOT}/build_artifacts
+  root-dir: ${FEEDSTOCK_ROOT}/build_artifacts
 
 CONDARC
 
-conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
+conda install --yes --quiet --override-channels -c conda-forge \
+    python=3.12 "conda-forge-ci-setup=4" conda-build pip
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"

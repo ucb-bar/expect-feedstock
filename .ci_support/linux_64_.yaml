@@ -1,16 +1,17 @@
 c_compiler:
 - gcc
 c_compiler_version:
-- '7'
+- '14'
+c_stdlib:
+- sysroot
+c_stdlib_version:
+- '2.17'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - jimfangx main
 docker_image:
-- condaforge/linux-anvil-comp7
-pin_run_as_build:
-  tk:
-    max_pin: x.x
+- quay.io/condaforge/linux-anvil-x86_64:alma9
 target_platform:
 - linux-64
 tk:
