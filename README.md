@@ -25,8 +25,8 @@ Current build status
   <tr>
     <td>GitHub Actions</td>
     <td>
-      <a href="https://github.com/jimfangx/expect-feedstock/actions/workflows/conda-build.yml">
-        <img src="https://github.com/jimfangx/expect-feedstock/actions/workflows/conda-build.yml/badge.svg" alt="Build conda package">
+      <a href="https://github.com/ucb-bar/expect-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/ucb-bar/expect-feedstock/actions/workflows/conda-build.yml/badge.svg" alt="Build conda package">
       </a>
     </td>
   </tr>
